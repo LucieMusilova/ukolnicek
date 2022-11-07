@@ -1,5 +1,5 @@
 export const Task = (props) => {
-  const {name, due, done} = props;
+  const { name, due, done } = props;
 
   return `
   <div class="task">
@@ -7,7 +7,7 @@ export const Task = (props) => {
       <div class="task__name">${name}</div>
       <div class="task__due">${due}</div>
     </div>
-    <div class=${done ? "task__done" : " "}>✓</div>
+    ${done ? '<div class="task__done">✓</div>' : " "}
   </div>  
         `;
 };
